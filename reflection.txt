@@ -1,0 +1,6 @@
+For this problem I first looked at whether or not the weight of the watermelon could be divided into two even numbers, which ruled out all the odd numbers but also the number 2 since 2 = 1+1 (two odd numbers). 
+if weight %2 != 0 or weight == 2:
+After that I wanted to get the weight of the first half, which I did with this for loop 
+for first_part in range(2, weight//2 + 1, 2)
+I began the range at 2 since I don't want to consider watermelons that have an odd weight, I then divided the watermelon's weight by 2, and then stepped through the range by 2 so that I would only consider even weights. 
+I stored the weights in a dictionary and could have printed them, but the assignment only asked for NO and YES to be printed, I did that instead. 
